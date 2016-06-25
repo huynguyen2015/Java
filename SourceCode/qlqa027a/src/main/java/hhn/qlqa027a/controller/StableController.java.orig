@@ -1,0 +1,133 @@
+/*
+ * Customers Java Swing Application Demo
+ *
+ * Copyright(c) 2013, devsniper.com
+ */
+package hhn.qlqa027a.controller;
+
+import hhn.qlqa027a.GUI.StableForm;
+import hhn.qlqa027a.GUI.StablePage;
+<<<<<<< HEAD
+import hhn.qlqa027a.entities.Permission;
+=======
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+import hhn.qlqa027a.entities.Stable;
+import hhn.qlqa027a.entities.Status;
+import hhn.qlqa027a.framework.AbstractDataPageController;
+import hhn.qlqa027a.framework.DataPageView;
+import hhn.qlqa027a.service.AbstractService;
+<<<<<<< HEAD
+import hhn.qlqa027a.service.PermissionService;
+import hhn.qlqa027a.service.StableService;
+import static hhn.qlqa027a.service.QueryParameter.with;
+=======
+import static hhn.qlqa027a.service.QueryParameter.with;
+import hhn.qlqa027a.service.StableService;
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+import hhn.qlqa027a.service.StatusService;
+import java.util.List;
+
+/**
+ * Dashboard Controller.
+ *
+ * @author Cem Ikta
+ */
+<<<<<<< HEAD
+public class StableController extends AbstractDataPageController<Stable> {
+=======
+public class StableController extends AbstractDataPageController<Stable> { 
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+
+    @Override
+    protected AbstractService<Stable> createService() {
+        return new StableService();
+    }
+
+    @Override
+    protected DataPageView<Stable> createDataPageView() {
+        return new StablePage();
+    }
+
+    @Override
+    public void openFormView(Stable stable) {
+<<<<<<< HEAD
+         new StableForm(this, stable).showDialog();
+=======
+        new StableForm(this, stable).showDialog();
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    }
+
+    @Override
+    public void onAddNew() {
+<<<<<<< HEAD
+        openFormView(new Stable());
+=======
+        Stable stable = new Stable();        
+        openFormView(stable);
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    }
+
+    @Override
+    public List<Stable> getData(String filter, int start, int end) {
+        if (filter.equals("")) {
+            return getService().getListWithNamedQuery(getNamedQuery(), start, end);
+        } else {
+            return getService().getListWithNamedQuery(getNamedQueryWithFilter(),
+<<<<<<< HEAD
+                    with("filter", "%" + filter + "%").parameters(), start, end);
+=======
+                    with("name", "%" + filter + "%").parameters(), start, end);
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+        }
+    }
+
+    @Override
+    public int getDataSize(String filter) {
+        if (filter.equals("")) {
+            return getService().getListWithNamedQuery(getNamedQuery()).size();
+        } else {
+            return getService().getListWithNamedQuery(getNamedQueryWithFilter(),
+<<<<<<< HEAD
+                    with("filter", "%" + filter + "%").parameters()).size();
+        }
+    }
+
+=======
+                    with("name", "%" + filter + "%").parameters()).size();
+        }
+    }
+    
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    @Override
+    public String getNamedQuery() {
+        return Stable.FIND_ALL;
+    }
+<<<<<<< HEAD
+
+=======
+    
+    
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    @Override
+    public String getNamedQueryWithFilter() {
+        return Stable.FIND_BY_FILTER;
+    }
+
+    @Override
+    public String getName() {
+        return "StableController";
+    }
+<<<<<<< HEAD
+
+    public List<Permission> getPermissionList() {
+        return new PermissionService().getListWithNamedQuery(Permission.FIND_ALL);
+    }
+
+    public Status getStatusById(int statusId) {
+        return new StatusService().find(statusId);
+=======
+    public List<Status> getStatusList() {
+        return new StatusService().getListWithNamedQuery(Status.FIND_ALL);
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    }
+}

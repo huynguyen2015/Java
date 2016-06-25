@@ -1,0 +1,299 @@
+#
+# Resource Bundle for Customers strings: EN
+#
+
+# app 
+App.Title=Food Center Management
+App.Version=Version 1.0
+App.Copyright=\u00a9 Copyright 2016 HHN team, 
+App.Details=Project details and source code: 
+App.Icons=Icons/Images: iconsdb.com and icons8.com 
+
+# app user session info
+App.Session.UserName =UserName
+App.Session.IsAuthorized =Is Authorized
+App.Session.HasMemberPermission =Member Permission
+App.Session.HasMenuPermission =Menu Permission
+App.Session.HasTablePermission =Table Permission
+App.Session.HasCategoryPermission =Category Permission
+App.Session.HasFoodPermission =Food Permission
+App.Session.HasRolePermission =Role Permission
+App.Session.HasPermissionPermission =Permission Permission
+App.Session.HasItemPermission =Item Permission
+App.Session.HasShiftPermission =Shift Permission
+App.Session.HasSchedulePermission =Schedule Permission
+App.Session.HasCPPermission =Certificate Permission
+App.Session.HasBillPermission =Bill Permission
+
+# menu actions
+Action.Dashboard=Dashboard
+Action.Members=Members
+Action.Categories=Categories
+Action.Menus=Menus
+Action.Tables=Tables
+Action.Foods=Foods
+Action.Roles=Roles
+Action.Permissions=Permissions
+Action.Items=Items
+Action.Shifts=Shifts
+Action.Schedules=Schedules
+Action.ComputerProficiencies=CPs
+Action.Bills=Bills
+
+# dashboard page view
+Dashboard.Admin.Dashboard=Dashboard
+Dashboard.Admin.LinkMembers=View members
+Dashboard.Admin.LinkRoles=View roles
+Dashboard.Admin.LinkPermissions=View permissions
+Dashboard.Admin.LinkMenus=View menus
+Dashboard.Admin.LinkCategories=View categories
+Dashboard.Admin.LinkFoods=View foods
+Dashboard.Admin.LinkTables=View tables
+Dashboard.Admin.LinkItems=View items
+Dashboard.Admin.LinkShifts=View shifts
+Dashboard.Admin.LinkSchedules=View schedules
+Dashboard.Admin.LinkEmployeeSchedules=Employee's schedules
+Dashboard.Admin.LinkComputerProficiencies=Computer Proficiencies
+Dashboard.Admin.LinkBills=View Bills
+
+# customer page view
+Employee.Page.Title=Employees
+Employee.Page.CompanyName=Company Name
+Employee.Page.Category=Category
+Employee.Page.FirstName=First Name
+Employee.Page.LastName=Last Name
+Employee.Page.Phone=Phone 
+Employee.Page.Mobile=Mobile 
+Employee.Page.Fax=Fax 
+Employee.Page.Email=E-Mail 
+Employee.Page.Homepage=Homepage 
+Employee.Page.Active=Active
+Employee.Page.Search.Keyword=Keyword
+Employee.Page.Search.Role=Role
+Employee.Page.Search.CreatedAt=Created At
+Employee.Page.FullName=Full Name
+Employee.Page.Phone=Phone
+Employee.Page.Email=Email
+Employee.Page.Role=Role
+Employee.Page.Status=Status
+
+# customer form view
+Employee.Form.NewTitle=Add new customer
+Employee.Form.EditTitle=Edit customer
+Employee.Form.GeneralPage.Title=General
+Employee.Form.AddressPage.Title=Address
+Employee.Form.CommunicationPage.Title=Communication
+Employee.Form.NotesPage.Title=Notes
+Employee.Form.IdentityNumber=Identity Number *
+Employee.Form.FullName=Full Name *
+Employee.Form.BirthDay=Birth Day
+Employee.Form.Phone=Phone
+Employee.Form.Email=E-mail *
+Employee.Form.Password=Password *
+Employee.Form.RePassword=Retype Password *
+Employee.Form.Address=Address *
+Employee.Form.Status=Status *
+Employee.Form.Role=Role *
+Employee.Form.Certificates=Certificates
+Employee.Form.Region=Region
+Employee.Form.PostalCode=Postal code
+Employee.Form.Country=Country
+Employee.Form.SelectCountry= Select country
+Employee.Form.Phone=Phone
+Employee.Form.Fax=Fax
+Employee.Form.Mobile=Mobile
+Employee.Form.Homepage=Homepage
+Employee.Form.Skype=Skype
+Employee.Form.Notes=Notes
+Employee.Form.Error.RequiredIdentityNumber=The Identity Number field is required!
+Employee.Form.Error.RequiredFullName=The Full Name field is required!
+Employee.Form.Error.RequiredEmail=The Email field is required!
+Employee.Form.Error.InvalidEmail=The Email is invalid!
+Employee.Form.Error.UsedEmail=The Email is in used!
+Employee.Form.Error.RequiredPassword=The Password field is required!
+Employee.Form.Error.MinPassword=The Password field must be at least 6 characters!
+Employee.Form.Error.MaxPassword=The Password field must be at most 50 characters!
+Employee.Form.Error.RequiredRePassword=The Retype Password field is required!
+Employee.Form.Error.RequiredRePasswordNotMatch=The Retype Password not match!
+Employee.Form.Error.RequiredAddress=The Address field is required!
+Employee.Form.Error.RequiredStatus=The Status field is required!
+Employee.Form.Error.RequiredRole=The Role field is required!
+
+# customer page view
+Shift.Page.Title=Shift
+Shift.Page.CompanyName=Company Name
+Shift.Page.Name=Name
+Shift.Page.Salary=Salary
+Shift.Page.MinServicers=Min Servicers
+Shift.Page.MaxServicers=MaxServicers 
+Shift.Page.MinBartenders=MinBartenders 
+Shift.Page.MaxBartenders=MaxBartenders 
+Shift.Page.MinManagers=MinManagers 
+Shift.Page.MaxManagers=MaxManagers 
+Shift.Page.StatusId=StatusId
+
+# customer page view
+Shift.Form.Title=Shift
+Shift.Form.CompanyName=Company Name
+Shift.Form.GeneralPage.Title=Garenal
+Shift.Form.Name.Title=Name
+Shift.Form.Salary.Title=Salary
+Shift.Form.MinServicers.Title=MinServicers
+Shift.Form.MaxServicers.Title=MaxServicers 
+Shift.Form.MinBartenders.Title=MinBartenders 
+Shift.Form.MaxBartenders.Title=MaxBartenders 
+Shift.Form.MinManagers.Title=MinManagers 
+Shift.Form.MaxManagers.Title=MaxManagers 
+Shift.Form.StatusId.Title=StatusId
+Shift.Form.NewTitle=New Title
+Shift.Form.EditTitle=Edit Title
+Shift.Form.Error.RequiredData=The data field is required!
+
+# category page view
+Category.Page.Title=Categories
+Category.Page.Name=Name
+Category.Page.Notes=Notes
+
+# category form view
+Category.Form.NewTitle=Add new category
+Category.Form.EditTitle=Edit category
+Category.Form.Name=Name *
+Category.Form.Notes=Notes
+Category.Form.NameError=The category name field is required!
+
+# country page view
+Country.Page.Title=Countries
+Country.Page.Code=Code 2
+Country.Page.Name=Name
+Country.Page.Notes=Notes
+
+# country form view
+Country.Form.NewTitle=Add new country
+Country.Form.EditTitle=Edit country
+Country.Form.Code=Code 2 *
+Country.Form.Name=Name *
+Country.Form.Notes=Notes
+Country.Form.CodeError=The country code 2 field is required!
+Country.Form.NameError=The country name field is required!
+
+# Permission page view
+Permission.Page.Title=Permissions
+Permission.Page.Name=Name
+
+# Permission form view
+Permission.Form.GeneralPage.Title=Permission
+Permission.Form.Name=Name *
+Permission.Form.Error.RequiredName=Permission name is required!
+Permission.Form.Error.NameExisted=Permission name have already in use.
+Permission.Form.NewTitle=Add new permission
+Permission.Form.EditTitle=Edit permission
+
+# Role page view
+Role.Page.Title=Roles
+Role.Page.Name=Name
+Role.Page.Type=Type
+Role.Page.Permissions=Permissions
+
+# Role form view
+Role.Form.GeneralPage.Title=Role
+Role.Form.Name=Name *
+Role.Form.Type=Type *
+Role.Form.Permissions=Permissions
+Role.Form.Error.RequiredName=Role name is required!
+Role.Form.Error.RequiredType=Role type is required!
+Role.Form.Error.RequiredPermissions=Permissions is required!
+Role.Form.NewTitle=Add new role
+Role.Form.EditTitle=Edit role
+
+#Shcedule page view
+Schedule.Page.Title=Schedule
+Schedule.Form.NewTitle=New title
+Schedule.Form.EditTitle=Edit title
+Schedule.Page.WorkingDate=Working date
+Schedule.Page.IsWorked=Is worked
+Schedule.Page.MinutesLate=Minutes late
+Schedule.Page.Employee=Employee
+Schedule.Page.Shift=Shift
+Schedule.Page.Status=Status
+Schedule.Form.GeneralPage.Title=General
+Schedule.Form.Error.RequiredWorkingDate=The working date is required!
+
+<<<<<<< HEAD
+#Menu page view
+Menu.Page.Title=Menu
+Menu.Page.Name=Name
+Menu.Page.CreatedAt=Created at
+Menu.Page.Status=Status
+Menu.Form.GeneralPage.Title=General
+Menu.Form.Error.Name=The name is required!
+
+#Menu form 
+Menu.Form.Name=Name*
+Menu.Form.NewTitle=New title
+Menu.Form.EditTitle=Edit title
+
+#Food page view
+Food.Page.Title=Food
+Food.Page.Name=Name
+Food.Page.Price=Price
+Food.Page.Category=Category
+Food.Page.Status=Status
+
+#Food form 
+Food.Form.GeneralPage.Title=General
+Food.Form.Name=Name*
+Food.Form.Price=Price*
+Food.Form.Error.Name=The name is required!
+Food.Form.Error.Price=The price is required!
+Food.Form.Error.Price2=The price error!
+Food.Form.NewTitle=New title
+Food.Form.EditTitle=Edit title
+
+#Menufood page view
+Menufood.Page.Menu=Menu
+Menu.Page.Food=Food
+Menufood.Page.Title=Menu food
+
+#Menufood form
+Menufood.Form.GeneralPage.Title=General
+Menufood.Form.NewTitle=New title
+Menufood.Form.EditTitle=Edit title
+=======
+# Role page view
+Stable.Page.Title=Tables
+Stable.Page.Name=Name
+Stable.Page.NumberOfSlot=Number of seat
+
+# Role form view
+Stable.Form.GeneralPage.Title=Table
+Stable.Form.Name=Name *
+Stable.Form.NumberOfSlot=Number seat *
+Stable.Form.Permissions=Permissions
+Stable.Form.Error.RequiredName=Table name is required!
+Stable.Form.Error.RequiredNumberOfSlot=Number of seat is required!
+Stable.Form.NewTitle=Add new table
+Stable.Form.EditTitle=Edit table
+
+# Role page view
+Employeeschedule.Page.Title=Employee's page
+Employeeschedule.Page.EmployeeSchedule=Employee Schedule
+Employeeschedule.Page.EmployeeName=Employee email
+Employeeschedule.Page.Schedule=Date
+Employeeschedule.Page.Status=Status
+Employeeschedule.Page.MinutesLate=Minutes Late
+Employeeschedule.Page.IsWorking=Is Worked
+
+# Role form view
+Employeeschedule.Form.GeneralPage.Title=Table
+Employeeschedule.Form.IsWorked=Is Worked 
+Employeeschedule.Form.MinutesLate=Minutes late
+Employeeschedule.Form.Employee=Employee *
+Employeeschedule.Form.Schedule=Schedule *
+Employeeschedule.Form.Status=Status *
+Employeeschedule.Form.Error.RequiredEmployee=Employee is required!
+Employeeschedule.Form.Error.RequiredSchedule=Schedule is required!
+Employeeschedule.Form.Error.RequiredStatus=Status is required!
+Employeeschedule.Form.Error.WrongNumberFormat=Minutes late is wrong number format!
+Employeeschedule.Form.NewTitle=Add new employee's schedule
+Employeeschedule.Form.EditTitle=Edit employee's schedule
+>>>>>>> Huy_BeginCode

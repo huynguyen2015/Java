@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 7, 2016 10:04:19 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="hibernatexml.Item" table="item" catalog="qlqa">
+        <id name="id" type="java.lang.Byte">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="45" />
+        </property>
+        <set name="employeeitemses" table="employeeitems" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ItemId" not-null="true" />
+            </key>
+            <one-to-many class="hibernatexml.Employeeitems" />
+        </set>
+    </class>
+</hibernate-mapping>

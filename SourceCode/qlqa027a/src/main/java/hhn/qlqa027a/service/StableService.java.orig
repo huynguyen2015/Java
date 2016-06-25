@@ -1,0 +1,62 @@
+/*
+ * Customers Java Swing Application Demo
+ *
+ * Copyright(c) 2013, devsniper.com
+ */
+package hhn.qlqa027a.service;
+
+<<<<<<< HEAD
+import hhn.qlqa027a.entities.Stable;
+import hhn.qlqa027a.entities.Status;
+import hhn.qlqa027a.util.Constants;
+
+/**
+ * Category Service
+=======
+import hhn.qlqa027a.entities.Shift;
+import hhn.qlqa027a.entities.Stable;
+import hhn.qlqa027a.entities.Status;
+import hhn.qlqa027a.util.Constants;
+import java.util.List;
+import javax.persistence.Query;
+/**
+ * Customer Service
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+ *
+ * @author Cem Ikta
+ */
+public class StableService extends AbstractService<Stable> {
+
+    private final StatusService statusService;
+    public StableService() {
+        super(Stable.class);
+        statusService = new StatusService();
+<<<<<<< HEAD
+    }  
+
+=======
+    }
+    
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    @Override
+    public boolean remove(Stable stable){
+        try{
+            Status deleteStatus = statusService.find(Constants.statusDeleted);
+<<<<<<< HEAD
+            stable.setStatus(deleteStatus);
+            update(stable);
+            return true;
+        }catch(Exception ex){
+             throw ex;
+        }      
+=======
+            stable.setStatusId(deleteStatus);
+            update(stable);
+            return true;
+        }catch(Exception ex){
+             
+        }
+        return false;
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    }
+}

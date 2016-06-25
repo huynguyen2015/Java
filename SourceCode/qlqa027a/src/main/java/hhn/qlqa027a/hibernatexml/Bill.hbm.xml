@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 7, 2016 10:04:19 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="hibernatexml.Bill" table="bill" catalog="qlqa">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="stable" class="hibernatexml.Stable" fetch="select">
+            <column name="TableId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="employee" class="hibernatexml.Employee" fetch="select">
+            <column name="EmployeeId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="status" class="hibernatexml.Status" fetch="select">
+            <column name="StatusId" not-null="true" />
+        </many-to-one>
+        <property name="createdAt" type="timestamp">
+            <column name="CreatedAt" length="19" />
+        </property>
+        <property name="numberOfCustomer" type="java.lang.Boolean">
+            <column name="NumberOfCustomer" />
+        </property>
+        <property name="amount" type="java.lang.Double">
+            <column name="Amount" precision="22" scale="0" />
+        </property>
+        <property name="customerPay" type="java.lang.Double">
+            <column name="CustomerPay" precision="22" scale="0" />
+        </property>
+        <property name="customerReturn" type="java.lang.Double">
+            <column name="CustomerReturn" precision="22" scale="0" />
+        </property>
+        <property name="mergeBillId" type="java.lang.Integer">
+            <column name="MergeBillId" />
+        </property>
+        <set name="billdetails" table="billdetail" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="BillId" not-null="true" />
+            </key>
+            <one-to-many class="hibernatexml.Billdetail" />
+        </set>
+    </class>
+</hibernate-mapping>

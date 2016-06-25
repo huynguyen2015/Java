@@ -1,0 +1,12 @@
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('1', 'Member Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('2', 'Menu Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('3', 'Table Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('4', 'Category Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('5', 'Food Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('6', 'Role Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('7', 'Permission Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('8', 'Item Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('9', 'Shift Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('10', 'Schedule Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('11', 'Certificate Permission');
+INSERT INTO `qlqa`.`permission` (`Id`, `Name`) VALUES ('12', 'Bill Permission');

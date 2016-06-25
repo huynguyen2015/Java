@@ -1,0 +1,126 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hhn.qlqa027a.entities;
+
+import java.util.Collection;
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+<<<<<<< HEAD
+import javax.persistence.ManyToOne;
+=======
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
+/**
+ *
+ * @author Huy
+ */
+@Entity
+@Table(name = "role")
+@XmlRootElement
+@NamedQueries({
+    @NamedQuery(name = "Role.findAll", query = "SELECT r FROM Role r WHERE StatusId <> 5"),
+    @NamedQuery(name = "Role.findByFilter", query = "SELECT r FROM Role r WHERE r.name LIKE :filter OR r.type LIKE :filter AND StatusId <> 5"),
+    @NamedQuery(name = "Role.findById", query = "SELECT r FROM Role r WHERE r.id = :id AND StatusId <> 5"),
+    @NamedQuery(name = "Role.findByName", query = "SELECT r FROM Role r WHERE r.name = :name AND StatusId <> 5"),
+    @NamedQuery(name = "Role.findByType", query = "SELECT r FROM Role r WHERE r.type = :type AND StatusId <> 5")})
+@AttributeOverride(name = "id", column = @Column(name = "Id",
+        nullable = false, columnDefinition = "BIGINT UNSIGNED"))
+public class Role extends BaseEntity {
+       
+    public static final String FIND_ALL = "Role.findAll";
+    public static final String FIND_BY_NAME = "Role.findByName";        
+    public static final String FIND_BY_FILTER = "Role.findByFilter";
+
+    @Column(name = "Name")
+    private String name;
+    @Column(name = "Type")
+    private String type; 
+    @ManyToMany
+    @JoinTable(name="rolepermissions", 
+          joinColumns=@JoinColumn(name="RoleId"),
+          inverseJoinColumns=@JoinColumn(name="PermissionId"))
+<<<<<<< HEAD
+    private Collection<Permission> permissions;    
+    @JoinColumn(name = "StatusId", referencedColumnName = "Id")
+    @ManyToOne(optional = false) 
+    private Status status;
+    
+=======
+    private Collection<Permission> permissions;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "role")
+    private Collection<Employee> employeeCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "roleId")
+    private Collection<Shiftnumbermember> shiftnumbermemberCollection;
+
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    public Role() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+<<<<<<< HEAD
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+=======
+    @XmlTransient
+    public Collection<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(Collection<Permission> permissions) {
+        this.permissions = permissions;
+>>>>>>> d78fe7614ed6d5fe526d2e377ff21513c5891edb
+    }
+    
+    @XmlTransient
+    public Collection<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(Collection<Permission> permissions) {
+        this.permissions = permissions;
+    }
+    
+    private String getPermissionNames() {
+        String name = "";
+        for(Permission p : permissions){
+            name += p.getName();
+        }
+        return name;
+    }
+    
+    @Override
+    public String toString() {
+        return this.name;
+    } 
+}

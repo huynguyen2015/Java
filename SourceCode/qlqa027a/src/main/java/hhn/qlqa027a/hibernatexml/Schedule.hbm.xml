@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 7, 2016 10:04:19 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="hibernatexml.Schedule" table="schedule" catalog="qlqa">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="employee" class="hibernatexml.Employee" fetch="select">
+            <column name="EmployeeId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="shift" class="hibernatexml.Shift" fetch="select">
+            <column name="ShiftId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="status" class="hibernatexml.Status" fetch="select">
+            <column name="StatusId" not-null="true" />
+        </many-to-one>
+        <property name="workingDate" type="timestamp">
+            <column name="WorkingDate" length="19" />
+        </property>
+        <property name="isWorked" type="java.lang.Boolean">
+            <column name="IsWorked" />
+        </property>
+        <property name="minutesLate" type="java.lang.Integer">
+            <column name="MinutesLate" />
+        </property>
+    </class>
+</hibernate-mapping>

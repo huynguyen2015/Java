@@ -1,0 +1,12 @@
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('1', '1', '1', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('2', '1', '2', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('3', '1', '3', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('4', '1', '4', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('5', '1', '5', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('6', '1', '6', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('7', '1', '7', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('8', '1', '8', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('9', '1', '9', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('10', '1', '10', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('11', '1', '11', '1');
+INSERT INTO `qlqa`.`rolepermissions` (`Id`, `RoleId`, `PermissionId`, `IsEnabled`) VALUES ('12', '1', '12', '1');

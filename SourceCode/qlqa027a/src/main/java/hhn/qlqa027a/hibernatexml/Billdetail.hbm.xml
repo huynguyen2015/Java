@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 7, 2016 10:04:19 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="hibernatexml.Billdetail" table="billdetail" catalog="qlqa">
+        <id name="id" type="int">
+            <column name="Id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="food" class="hibernatexml.Food" fetch="select">
+            <column name="FoodId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="bill" class="hibernatexml.Bill" fetch="select">
+            <column name="BillId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="status" class="hibernatexml.Status" fetch="select">
+            <column name="StatusId" not-null="true" />
+        </many-to-one>
+        <property name="quantum" type="boolean">
+            <column name="Quantum" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="Description" />
+        </property>
+    </class>
+</hibernate-mapping>
